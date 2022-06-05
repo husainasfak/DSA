@@ -7,20 +7,32 @@ using namespace std;
 
 void subArray(int arr[], int sizeOfArray){
      int LARGEST_SUBARRAY_SUM = 0;
-     for(int  i =0; i<sizeOfArray; i++){
-          for(int j = i; j<sizeOfArray; j++){
+
+     for(int  i = 0; i < sizeOfArray; i++){
+
+          for(int j = i; j < sizeOfArray; j++){
+
                int subArraySum = 0;
+
                for(int k = i; k<=j; k++){
+
                     // Print each sub array
+
                     cout<< arr[k]<<",";
+
                     subArraySum += arr[k];
+
                }
+
                // check if current sub array sum is greater then largest sub array sum
                LARGEST_SUBARRAY_SUM = max(LARGEST_SUBARRAY_SUM,subArraySum);
                cout<<endl;
           }
+
      }
+
      cout<<LARGEST_SUBARRAY_SUM;
+
 }
 
 int main(){

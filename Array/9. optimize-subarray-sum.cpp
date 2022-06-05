@@ -1,5 +1,5 @@
 // prefix sums approach;
-// ! 1. Build Prefix sum array (additional array) using ps[i] = ps[i-1]+ current element --- o(n)
+// ! 1. Build Prefix sum array (additional array) using ps[i] = ps[i-1] + current element --- o(n)
 // ! 2. instead of using brute force method print sum using ps[j] - ps[i-1] from prefix sum array 
 
 #include<bits/stdc++.h>
@@ -14,9 +14,7 @@ int prefixSumArrayMethod(int *arr, int sizeOfArray){
 
      for(int i=1; i<sizeOfArray; i++){
           prefixArray[i] = prefixArray[i-1] + arr[i];
-       
      }
-
      int LARGEST_SUM = 0;
 
      for(int i=0; i<sizeOfArray; i++){
