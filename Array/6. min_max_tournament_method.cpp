@@ -68,5 +68,5 @@ int main(){
 // time complexity --  O(n)
 // space complexity  -- O(1)
 
-// in best case (ascending order of element) (n-2 ) + 1 comparisions
-//  in worst case (descending order of element) 2(n-2) +1 comparisions
+// in best case (ascending order of element) (n-2) + 1 comparisions
+//  in worst case (descending order of element) 2(n-2) + 1 comparisions
